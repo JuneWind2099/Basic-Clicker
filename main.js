@@ -24,8 +24,6 @@ var save = {
 	students = students
 }
 
-localStorage.setItem("save",JSON.stringify(save));
-var savegame = JSON.parse(localStorage.getItem("save"));
 
 function newGame(){
 	students = 0;
