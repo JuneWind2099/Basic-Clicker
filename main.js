@@ -20,7 +20,7 @@ function buyStudent(){
 };
 
 
-function newGame(number){
+function newGame(){
 	students = students - students;
 	books = books - books;
 	  document.getElementById('students').innerHTML = students;
