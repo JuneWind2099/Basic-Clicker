@@ -19,6 +19,19 @@ function buyStudent(){
     document.getElementById('StudentCost').innerHTML = nextCost;  //updates the cursor cost for the user
 };
 
+var save = {
+	books = books
+	students = students
+}
+
+localStorage.setItem("save",JSON.stringify(save));
+var savegame = JSON.parse(localStorage.getItem("save"));
+
+function newGame(){
+	students = 0
+	books = 0
+}
+
 window.setInterval(function(){
 	
 	read(students);
