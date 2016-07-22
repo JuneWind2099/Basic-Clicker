@@ -30,6 +30,8 @@ var savegame = JSON.parse(localStorage.getItem("save"));
 function newGame(number){
 	students = number
 	books = number
+	  document.getElementById('students').innerHTML = students;
+	  document.getElementById('books').innerHTML = books;
 }
 
 window.setInterval(function(){
