@@ -19,6 +19,14 @@ function buyStudent(){
     document.getElementById('StudentCost').innerHTML = nextCost;  //updates the cursor cost for the user
 };
 
+
+function newGame(){
+	students = students - students;
+	books = books - books;
+	  document.getElementById('students').innerHTML = students;
+	  document.getElementById('books').innerHTML = books;
+}
+
 window.setInterval(function(){
 	
 	read(students);
