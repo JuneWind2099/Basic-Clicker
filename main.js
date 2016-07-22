@@ -27,9 +27,9 @@ var save = {
 localStorage.setItem("save",JSON.stringify(save));
 var savegame = JSON.parse(localStorage.getItem("save"));
 
-function newGame(){
-	students = 0
-	books = 0
+function newGame(number){
+	students = number
+	books = number
 }
 
 window.setInterval(function(){
