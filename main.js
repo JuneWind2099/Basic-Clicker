@@ -49,5 +49,6 @@ function Reset(){
 window.setInterval(function(){
 	
 	read(students);
+	console.log(save)
 	
 }, 1000);
