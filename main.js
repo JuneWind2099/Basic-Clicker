@@ -27,6 +27,22 @@ function newGame(){
 	  document.getElementById('books').innerHTML = books;
 }
 
+//Saving Here
+
+function load_game() {
+    var result = localStorage.getItem("websitename");
+    player = JSON.parse(result);
+}
+
+function save_game() {
+    localStorage.setItem("websitename", JSON.stringify(player));        
+}
+
+function reset() {
+    localStorage.removeItem("websitename");
+    reload_view();
+}  
+
 window.setInterval(function(){
 	
 	read(students);
