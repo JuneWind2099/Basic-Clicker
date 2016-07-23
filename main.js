@@ -27,17 +27,27 @@ function newGame(){
 	  document.getElementById('books').innerHTML = books;
 }
 
-
-
-function SaveGame() {
-	var saveBC = 
-	books: document.getElementById('books').innerHTML,
-	students: document.getElementById('students').innerHTML;
-	localStorage.setItem("SsaveBC", JSON.stringify(saveBC));
+var player = {
+    students: 0,
+    books: 0
 }
+
+function load_game() {
+    var result = localStorage.getItem("websitename");
+    player = JSON.parse(result);
+}
+
+function save_game() {
+    localStorage.setItem("websitename", JSON.stringify(player));        
+}
+
+function reset() {
+    localStorage.removeItem("websitename");
+    reload_view();
+}  
+
 window.setInterval(function(){
 	
 	read(students);
-	console.log(saveBC);
 	
 }, 1000);
