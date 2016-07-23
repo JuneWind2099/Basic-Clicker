@@ -44,11 +44,11 @@ function save_game() {
 
 function reset() {
     localStorage.removeItem("websitename");
-    reload_view();
 }  
 
 window.setInterval(function(){
 	
 	read(students);
+	console.log(player);
 	
 }, 1000);
