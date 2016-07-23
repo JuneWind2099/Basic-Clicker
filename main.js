@@ -27,12 +27,12 @@ function newGame(){
 	  document.getElementById('books').innerHTML = books;
 }
 
-var save = {
-	books: books,
-	students: students
-}
+
 
 function SaveGame(){
+	var save = 
+	books: books,
+	students: students;
 	localStorage.setItem("save",JSON.stringify(save));
 }
 
