@@ -28,8 +28,8 @@ function newGame(){
 }
 
 var saveBC = {
-	books: books,
-	students: students
+	books: document.getElementById('books').innerHTML,
+	students: document.getElementById('students').innerHTML
 }
 
 function SaveGame() {
