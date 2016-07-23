@@ -28,6 +28,10 @@ function newGame(){
 }
 
 //Saving Here
+var player = {
+    books: books,
+    students: students
+}
 
 function load_game() {
     var result = localStorage.getItem("websitename");
