@@ -28,8 +28,8 @@ function newGame(){
 }
 
 var player = {
-    students: 0,
-    books: 0
+    students: students,
+    books: books
 }
 
 function load_game() {
