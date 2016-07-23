@@ -29,8 +29,6 @@ function newGame(){
 
 //Saving Here
 var player = {
-	document.getElementById('students').innerHTML = students;
-	  document.getElementById('books').innerHTML = books;
     books: books,
     students: students
 }
@@ -51,6 +49,6 @@ function reset() {
 window.setInterval(function(){
 	
 	read(students);
-	console.log(player);
+
 	
 }, 1000);
