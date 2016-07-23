@@ -27,6 +27,14 @@ function newGame(){
 	  document.getElementById('books').innerHTML = books;
 }
 
+var save = {
+	books: books,
+	students: students
+}
+
+localStorage.setItem("save",JSON.stringify(save));
+var savegame = JSON.parse(localStorage.getItem("save"));
+
 window.setInterval(function(){
 	
 	read(students);
