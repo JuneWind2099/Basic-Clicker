@@ -27,13 +27,17 @@ function newGame(){
 	  document.getElementById('books').innerHTML = books;
 }
 
-var save = {
+var saveBC = {
 	books: books,
 	students: students
 }
 
+function SaveGame() {
+	localStorage.setItem("SsaveBC", JSON.stringify(saveBC));
+}
 window.setInterval(function(){
 	
 	read(students);
+	console.log(saveBC);
 	
 }, 1000);
