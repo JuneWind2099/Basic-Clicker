@@ -27,10 +27,7 @@ function newGame(){
 	  document.getElementById('books').innerHTML = books;
 }
 
-var player = {
-    students: students,
-    books: books
-}
+
 
 function load_game() {
     var result = localStorage.getItem("websitename");
@@ -38,6 +35,9 @@ function load_game() {
 }
 
 function save_game() {
+	var player = 
+    students: students,
+    books: books;
     localStorage.setItem("websitename", JSON.stringify(player));        
 }
 
@@ -49,5 +49,6 @@ function reset() {
 window.setInterval(function(){
 	
 	read(students);
+	console.log(player);
 	
 }, 1000);
