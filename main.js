@@ -28,8 +28,8 @@ function newGame(){
 }
 
 var save = {
-	books: 0,
-	students: 0;
+	books: books,
+	students: students
 }
 
 function SaveGame(){
