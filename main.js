@@ -32,23 +32,8 @@ var save = {
 	students: students
 }
 
-function SaveGame(){
-	localStorage.setItem("save",JSON.stringify(save));
-}
-
-function LoadGame(){
-	var result = localStorage.getItem("save");
-	var savegame = JSON.parse(localStorage.getItem("result"));
-}
-
-function Reset(){
-	localStorage.removeItem("save");
-    reload_view();
-}
-
 window.setInterval(function(){
 	
 	read(students);
-	console.log(save)
 	
 }, 1000);
