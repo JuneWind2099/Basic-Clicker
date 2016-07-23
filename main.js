@@ -27,12 +27,12 @@ function newGame(){
 	  document.getElementById('books').innerHTML = books;
 }
 
-var saveBC = {
-	books: document.getElementById('books').innerHTML,
-	students: document.getElementById('students').innerHTML
-}
+
 
 function SaveGame() {
+	var saveBC = 
+	books: document.getElementById('books').innerHTML,
+	students: document.getElementById('students').innerHTML;
 	localStorage.setItem("SsaveBC", JSON.stringify(saveBC));
 }
 window.setInterval(function(){
