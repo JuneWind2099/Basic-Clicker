@@ -29,6 +29,8 @@ function newGame(){
 
 //Saving Here
 var player = {
+	document.getElementById('students').innerHTML = students;
+	  document.getElementById('books').innerHTML = books;
     books: books,
     students: students
 }
